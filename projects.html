@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title></title>
+	<style type="text/css">
+
+		body{
+			background-color: white;
+			font-family: Times New Roman;
+			font-size: 30px;
+			color: lightpink;
+		}
+
+		a{
+			color: white;
+			text-decoration: none;
+
+		}
+
+		.boxes{
+		width: 100px;
+		height: 100px;
+		display: inline-block;
+		margin-right:10px;
+		margin-top: 10px;
+		margin-left: 60px;*/
+		}
+
+		#homepage{
+			background-color: lightpink;
+			font-size: 20px;
+
+		}
+		
+
+		#journal{
+			background-color: deeppink;
+			font-size: 20px;
+		}
+	
+
+		#aboutme{
+			background-color: hotpink;
+			font-size: 20px;
+		
+		}
+
+		#homepage:hover{
+            background-color:black;
+			transition: 1s;
+		}
+		#projects:hover{
+			background-color:black;
+			transition: 1s;
+		}
+
+		#journal:hover{
+			background-color:black;
+			transition: 1s;
+		}
+
+		#aboutme:hover{
+			background-color:black;
+			transition: 1s;
+		}
+
+		#project1{
+		
+			top: 250px;
+			left: 100px;
+			transition: 2s;
+		}
+
+		#project2{
+			
+			top: 170px;
+			left: 370px;
+			transition:2s;
+		}
+
+		#project3{
+		
+			top: 250px;
+			left: 640px;
+			transition: 3s;
+		}
+
+
+		#project4{
+		
+			top: 170px;
+			left: 910px;
+		}
+
+		#project5{
+			
+			top: 250px;
+			right: 100px;
+		}
+
+		.project{
+			width: 200px;
+			height: 200px;
+			background-image:url(https://i.pinimg.com/736x/06/93/57/0693570603c308fe3a94da5c5615f7ae.jpg);
+			background-size: contain;
+			position: absolute;
+			font-size:20px;
+			color:black;
+			text-align: center ;
+		}
+
+		.number{
+			position:relative;
+			top:40%;
+			
+		}
+
+		#directions{
+			height: 30px;
+			width: 330px;
+			background-color: deeppink;
+			font-size: 20px;
+			color: white;
+			text-align: center;
+			text-decoration: italic;
+		}
+
+
+
+	</style>
+</head>
+<body>
+	<div id="directions">⭐️ Click on a star to open a project! ⭐️</div>
+	
+	<!-- <a href="project1.html"> -->
+		<div class="project" id="project1">
+		<div class="number">1</div>
+	 </div> 	<!--end of the project div -->
+<!-- </a> -->
+
+
+	<!-- <a href="project2.html"> -->
+
+
+		<div class="project" id="project2"><div class="number">2</div></div>
+	<!-- </a> -->
+
+
+	<!-- <a href="project3.html"> -->
+	<div class="project" id="project3"><div class="number">3</div></div>
+<!-- </a> -->
+	<a href="project4.html"><div class="project" id="project4"><div class="number">4</div></div></a>
+	<a href="project5.html"><div class="project" id="project5"><div class="number">5</div></div></a>
+
+	<center>
+		<a href="index.html">
+			<div class="boxes" id=homepage> Homepage</div>
+		</a>
+		
+		<a href="journal.html">
+			<div class="boxes" id=journal>Journal</div>
+		</a>
+
+		<a href="aboutme.html">
+		<div class="boxes" id=aboutme>About Me</div>
+		</a>
+	</center>
+
+	<script text="type/javascript">
+		function openProject2 (){
+		window.open("project2.html")
+		}
+
+		project2.addEventListener("click", function(){
+			project2.style.transform ="rotate(1080deg)"
+			setTimeout(openProject2, 2000)
+					
+
+		})
+
+	function openProject1 (){
+		window.open("project1.html")
+		}
+
+		project1.addEventListener("click", function(){
+			project1.style.transform ="rotate(1080deg)"
+			setTimeout(openProject1, 2000)
+					
+
+		})
+
+
+	function openProject3 (){
+		window.open("project3.html")
+		}
+
+		project3.addEventListener("click", function(){
+			project3.style.transform ="rotate(1080deg)"
+			setTimeout(openProject3, 2000)
+					
+
+		})
+		
+	</script>
+
+</body>
+</html>

@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<center>
+	<style>
+		#NoColorFlower{
+			width: 400px;
+			height: 400px;
+			background-image: url(flower.png);
+			background-size: contain;
+			background-position: center;
+			background-repeat: no-repeat;
+
+		}
+
+		.colorBoxes{
+			width: 100px;
+			height: 100px;
+			display: inline-block;
+			top: 300px;
+		}
+
+		#red{
+			background-color: red;
+		}
+
+		#orange{
+			background-color: orange;
+		}
+
+		#yellow{
+			background-color: yellow;
+		}
+
+		#green{
+			background-color: green;
+		}
+
+		#blue{
+			background-color: blue;
+		}
+
+		#purple{
+			background-color: purple;
+		}
+
+		#projectsPage{
+			height: 25px;
+			width: 300px;
+			background-color: hotpink;
+			top: 10px;
+			position: absolute;
+			color: white;
+			font-size: 15px;
+			text-align: center;
+		}
+
+		#welcomeText{
+			width: 400px;
+			height: 50px;
+			background-color: deeppink;
+			font-size: 20px;
+			text-align: center;
+			font-style: italic;
+			font-style: bold;
+			/*position: absolute;*/
+			left: 500px;
+			color: white;
+		}
+
+	</style>
+</head>
+
+
+<body>
+	<a href="projects.html"><div id="projectsPage">⭐️ Click here to return to projects page ⭐️</div></a>
+	<center>
+	<div id="welcomeText">Project #1: press any color box to change the flower's color!</div>
+	<div id="NoColorFlower"></div>
+	<div class="colorBoxes" id="red"></div>
+	<div class="colorBoxes" id="orange"></div>
+	<div class="colorBoxes" id="yellow"></div>
+	<div class="colorBoxes" id="green"></div>
+	<div class="colorBoxes" id="blue"></div>
+	<div class="colorBoxes" id="purple"></div>
+	
+
+</center>
+
+
+	<script type="text/javascript">
+		red.addEventListener("click", function(){
+			NoColorFlower.style.backgroundImage="url(redFlower.png)"
+
+		})
+
+		orange.addEventListener("click", function(){
+			NoColorFlower.style.backgroundImage="url(orangeFlower.png)"
+})
+		yellow.addEventListener("click", function(){
+			NoColorFlower.style.backgroundImage="url(yellowFlower.png)"
+
+		})
+
+		green.addEventListener("click", function(){
+			NoColorFlower.style.backgroundImage="url(greenFlower.png)"
+})
+
+		blue.addEventListener("click", function(){
+			NoColorFlower.style.backgroundImage="url(blueFlower.png)"
+
+		})
+
+		purple.addEventListener("click", function(){
+			NoColorFlower.style.backgroundImage="url(purpleFlower.png)"
+})
+
+	</script>
+</body>
+</html>
+
+
+
+
+<!-- A flower that starts off with no color, and when a specific color is pushed at the bottom of the screen, the flower changes to that color -->

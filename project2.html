@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<style>
+		
+		#dog{
+			width: 300px;
+			height:150px;
+			top: 150px;
+			position: absolute;
+			background-image: url(https://cdn.dribbble.com/userupload/10228348/file/original-00fc651aa3bca2e84160bf1796b60539.gif);
+			background-size: contain;
+			background-repeat: no-repeat;
+		}
+
+		#cat{
+			width: 300px;
+			height: 150px;
+			top: 300px;
+			position: absolute;
+			background-image: url(https://cdn.dribbble.com/userupload/22231014/file/original-dd7cd25397e5c379623b48717d99376a.gif);
+			background-size: contain;
+			background-repeat: no-repeat;
+		}
+
+		#welcomeText{
+			width: 400px;
+			height: 50px;
+			background-color: deeppink;
+			font-size: 20px;
+			text-align: center;
+			font-style: italic;
+			font-style: bold;
+			position: absolute;
+			left: 500px;
+			color: white;
+
+
+		}
+
+		#projectsPage{
+			height: 20px;
+			width: 300px;
+			background-color: hotpink;
+			top: 10px;
+			position: absolute;
+			color: white;
+			font-size: 15px;
+			text-align: center;
+
+		}
+
+
+	</style>
+</head>
+<body>
+	<div id="welcomeText">Project #2: press any key to move the animals across the screen!</div>
+	<div id="dog"></div>
+	<div id="cat"></div>
+	<a href="projects.html"><div id="projectsPage">⭐️ Click here to return to projects page ⭐️</div></a>
+	
+	<script type="text/javascript">
+		let dog = document.getElementById('dog')
+		dog.style.left="0px"
+		document.addEventListener("keypress", function(){
+			console.log(dog.style.left)
+			dog.style.left = parseInt(dog.style.left) + 10 +"px"
+
+		let cat = document.getElementById('cat')
+		cat.style.right="0px"
+		document.addEventListener("keypress", function(){
+			console.log(cat.style.right)
+			cat.style.right = parseInt(cat.style.right) + 10 + "px"
+		})
+		})
+</script>
+</body>
+</html>
