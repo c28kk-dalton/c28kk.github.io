@@ -4,6 +4,11 @@
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<title></title>
+
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=League+Script&display=swap" rel="stylesheet">
+
 	<style type="text/css">
 		body{
 			background-color: white;
@@ -18,13 +23,14 @@
 
 		}
 
-		.boxes{
+		.boxes{	
 		width: 100px;
 		height: 100px;
 		display: inline-block;
 		margin-right:10px;
 		margin-top: 10px;
-		margin-left: 60px;*/
+		margin-left: 30px;*/
+
 		}
 
 		#homepage{
@@ -71,16 +77,33 @@
 			background-color: lightpink;
 		}
 
-	/*	#writing{
-			top: 140px;
-		}*/
+		#writing{
+			background-image: url(profileText.png);
+			background-position: center;
+			background-size: contain;
+			background-repeat: no-repeat;
+			width: 350px;
+			height: 350px;
+			font-size: 20px;
+			font-family: League Script;
+			color: navy;
+			top: 50px;
+			padding-top:100px;
+		}
+
+		#text{
+		position: relative;			
+		width: 60%;
+			height: 60%;
+			/*background-color: black;*/
+			top: 20px;
+		}
 	</style>
 </head>
 <body>
 	
 	<center>
-		<!-- <div id="writing">hi! my name is kate and I am in 10th grade. </div> -->
-		<a href="index.html">
+			<a href="index.html">
 			<div class="boxes" id=homepage> Homepage</div>
 		</a>
 		
@@ -90,7 +113,11 @@
 
 		<a href="projects.html">
 		<div class="boxes" id=projects>Projects</div>
-		</a>
+				</a>
+
+		<div id="writing"><div id = "text">Hi! Welcome to my website! My name is Kate and I am in 10th grade. Currently, I am taking the class Computer Science 1. I hope you love all my projects! </div></div> 
+	
+
 	</center>
 
 </body>
