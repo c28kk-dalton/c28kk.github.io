@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Instrument+Serif:ital@0;1&display=swap" rel="stylesheet">
+	<style>
+#stockingHolder{
+		width: 100%;
+		height: 5px;
+		background-color: darkred;
+		top: 120px;
+		position: absolute;
+		z-index: 10;
+		z-index: 1;
+	
+	}
+
+	#instructions{
+		width: 100%;
+		height: 100px;
+		background-color: darkred;
+		color: white;
+		font-family: Instrument Serif;
+		opacity:1;
+	}
+
+	#tree{
+		width: 100%;
+		height: 100%;
+		position: absolute;
+		background-position: center;
+		background-color: lightgreen;
+		background-image: url(https://www.autoitscript.com/forum/uploads/monthly_2019_12/tree.gif.36a0166f1dc669f7eb55312d8cbf97a7.gif);
+		background-repeat: no-repeat;
+		font-family: Instrument Serif;
+		z-index: 0;
+
+
+	}
+
+	.stockings{
+		width: 150px;
+		height: 200px;
+		position: absolute;
+		background-image: url(https://media.baamboozle.com/uploads/images/75618/1669893763_15866_url.gif);
+		background-repeat: no-repeat;
+		background-size: contain;
+	}
+
+	#stocking1{
+		left: 120px;
+	}
+
+	#stocking2{
+		left: 330px;
+	}
+
+	#stocking3{
+		left: 540px;
+	}
+
+	#stocking4{
+		left: 750px;
+	}
+
+	#stocking5{
+		left: 960px;
+	}
+
+	#stocking6{
+		left: 1170px;
+	}
+
+#music{
+	width: 75px;
+	height: 75px;
+	background-color: darkred;
+	top: 80%;
+	left: 30px;
+}
+
+	.photos{
+		width: 200px;
+		height: 200px;
+		z-index:20;
+		position: absolute;
+		font-family: Instrument Serif;
+		font-size: 20px;
+
+
+}
+
+	#photo1{
+		top: 500px;
+		left: 200px;
+	}
+
+	#photo2{
+		top: 500px;
+		left: 1000px;
+	}
+
+
+	div{
+		opacity:0;
+	}
+
+
+	</style>
+</head>
+
+
+
+<body>
+	<center>
+		<div class=photos id="photo1">i love you!</div>
+	<div class=photos id="photo2">see you soon!</div>
+
+
+	<div id="background"></div>
+	<div id="stockingHolder"></div>
+	<div id="instructions"><br>merry christmas, grandma! click anywhere on the screen to see a suprise message!</div>
+	<div id="tree"><br><br><br><br><br><br><br>merry christmas! i miss you and i can't wait to see you soon!</div>
+	<div class="stockings" id="stocking1"></div>
+	<div class="stockings" id="stocking2"></div>
+	<div class="stockings" id="stocking3"></div>
+	<div class="stockings" id="stocking4"></div>
+	<div class="stockings" id="stocking5"></div>
+	<div class="stockings" id="stocking6"></div>
+	<div id="music"></div>
+
+
+<script type="text/javascript">
+		let clickcounter=0
+		document.addEventListener("click", function(){
+			clickcounter=clickcounter+1
+			console.log(clickcounter)
+
+			if(clickcounter==1){
+				tree.style.opacity="1"
+			}
+
+			if(clickcounter==2){
+				stockingHolder.style.opacity="1"
+			}
+
+			if(clickcounter==3){
+				stocking1.style.opacity="1"
+			}
+
+			if(clickcounter==4){
+				stocking2.style.opacity="1"
+			}
+
+			if(clickcounter==5){
+				stocking3.style.opacity="1"
+			}
+
+			if(clickcounter==6){
+				stocking4.style.opacity="1"
+			}
+
+			if(clickcounter==7){
+				stocking5.style.opacity="1"
+			}
+
+			if(clickcounter==8){
+				stocking6.style.opacity="1"
+			}
+
+			if(clickcounter==9){
+				photo1.style.opacity="1"
+			}
+
+			if(clickcounter==10){
+				photo2.style.opacity="1"
+			}
+
+		})
+	
+</script>
+</body>
+</html>
