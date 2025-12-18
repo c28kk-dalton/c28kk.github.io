@@ -11,13 +11,22 @@
 		background-repeat: no-repeat;
 		}
 
+		#directions{
+			width: 400px;
+			height: 40px;
+			background-color: hotpink;
+			color: white;
+		}
+
 	</style>
 
 </head>
 <body>
-
+<center>
 <audio id="hello" src="hello.m4a"></audio>
+<div id="directions">⭐️ Click anywhere to see a surprise message! ⭐️</div>
 <script type = "text/javascript">
+
 	
 	document.addEventListener("click", function (){
 		hello.play ()

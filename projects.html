@@ -148,11 +148,14 @@
 	<!-- </a> -->
 
 
-	<!-- <a href="project3.html"> -->
+	<a href="project3.html">
 	<div class="project" id="project3"><div class="number">3</div></div>
-<!-- </a> -->
-	<a href="project4.html"><div class="project" id="project4"><div class="number">4</div></div></a>
-	<a href="holidaycard.html"><div class="project" id="project5"><div class="number">5</div></div></a>
+	</a>
+
+
+	<a href="holidaycard.html"><div class="project" id="project4"><div class="number">4</div></div></a>
+	
+	<a href="project4.html"><div class="project" id="project5"><div class="number">5</div></div></a>
 
 	<center>
 		<a href="index.html">
@@ -199,6 +202,17 @@
 		project3.addEventListener("click", function(){
 			project3.style.transform ="rotate(1080deg)"
 			setTimeout(openProject3, 2000)
+					
+
+		})
+
+		function openProject4 (){
+		window.open("project4.html")
+		}
+
+		project4.addEventListener("click", function(){
+			project4.style.transform ="rotate(1080deg)"
+			setTimeout(openProject4, 2000)
 					
 
 		})
