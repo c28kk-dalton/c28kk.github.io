@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<style type="text/css">
+		body{
+			background-color: white;
+		}
+
+		#cookie{
+			background-image: url(https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTTxfiPHsQW_5ipGlLcixZRNcHzsyQrdj4TDQ&s);
+			background-size: contain;
+			background-repeat: no-repeat;
+			width: 100px;
+			height: 100px;
+			top: 100px;
+			left: 100px;
+			position: absolute;
+		}
+</style>
+
+</head>
+<body>
+	<div id="cookie"></div>
+
+	<script type="text/javascript">
+		function move (){
+			cookie.style.top = Math.random()*700+"px"
+			cookie.style.left = Math.random()*700+"px"
+		}
+
+		setInterval(move, 700)
+
+		cookie.addEventListener("click", function(){
+			alert("you win!")
+		})
+
+	</script>
+</body>
+</html>

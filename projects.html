@@ -92,13 +92,24 @@
 		
 			top: 170px;
 			left: 910px;
+		transition: 3s;
+
 		}
 
 		#project5{
 			
 			top: 250px;
 			right: 100px;
+		transition: 3s;
+
 		}
+
+	#project6{
+			
+			top: 450px;
+			right: 100px;
+		transition: 3s;
+}
 
 		.project{
 			width: 200px;
@@ -148,15 +159,16 @@
 	<!-- </a> -->
 
 
-	<a href="project3.html">
+
 	<div class="project" id="project3"><div class="number">3</div></div>
-	</a>
 
 
-	<a href="holidaycard.html"><div class="project" id="project4"><div class="number">4</div></div></a>
+
+	<div class="project" id="project4"><div class="number">4</div></div>
 	
-	<a href="project4.html"><div class="project" id="project5"><div class="number">5</div></div></a>
+	<div class="project" id="project5"><div class="number">5</div></div>
 
+	<div class="project" id="project6"><div class="number">6</div></div>
 	<center>
 		<a href="index.html">
 			<div class="boxes" id=homepage> Homepage</div>
@@ -201,22 +213,53 @@
 
 		project3.addEventListener("click", function(){
 			project3.style.transform ="rotate(1080deg)"
-			setTimeout(openProject3, 2000)
-					
+			setTimeout(openProject3, 2000)		
 
 		})
 
 		function openProject4 (){
-		window.open("project4.html")
+		window.open("holidaycard.html")
 		}
 
 		project4.addEventListener("click", function(){
 			project4.style.transform ="rotate(1080deg)"
 			setTimeout(openProject4, 2000)
-					
-
+				
 		})
-		
+
+
+		function openProject4 (){
+		window.open("holidaycard.html")
+		}
+
+		project4.addEventListener("click", function(){
+			project4.style.transform ="rotate(1080deg)"
+			setTimeout(openProject4, 2000)
+				
+		})
+
+
+		function openProject5 (){
+		window.open("array.html")
+		}
+
+		project5.addEventListener("click", function(){
+			project5.style.transform ="rotate(1080deg)"
+			setTimeout(openProject5, 2000)
+				
+		})
+
+			function openProject6 (){
+		window.open("featherie.html")
+		}
+
+		project6.addEventListener("click", function(){
+			project6.style.transform ="rotate(1080deg)"
+			setTimeout(openProject6, 2000)
+				
+		})
+
+
 	</script>
 
 </body>

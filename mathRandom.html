@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+	body{
+		background-color: rgb(100,0,100);
+	}
+
+	#projectsPage{
+			height: 25px;
+			width: 300px;
+			background-color: hotpink;
+			top: 10px;
+			position: absolute;
+			color: white;
+			font-size: 15px;
+			text-align: center;
+		}
+
+	#directions{
+		width: 400px;
+		height: 40px;
+		background-color: hotpink;
+		color: white;
+	}
+</style>
+</head>
+<body>
+	<a href="projects.html"><div id="projectsPage">⭐️ Click here to return to projects page ⭐️</div>
+		<a>
+<center>
+	<div id="directions">⭐️ Click anywhere to change the background color! ⭐️</div>
+<script type="text/javascript">
+	document.addEventListener("click", function(){
+		let r = Math.round(Math.random()*255)
+		let g = Math.round(Math.random()*255)
+		let b = Math.round(Math.random()*255)
+
+		document.body.style.backgroundColor="rgb("+r+","+g+","+b+")"
+	})
+
+
+</script>
+</body>
+</html>

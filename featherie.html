@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<style>
+
+		body{
+			margin:0px;
+			background-color: lightpink;
+		}
+
+
+	#directions{
+		color: black;
+		font-size: 20px;
+		margin-top: 10px;
+		margin-bottom: 10px;
+		text-decoration-style: italic;
+	}
+	#tops{
+			width: 400px;
+			height: 400px;
+			border: 1px solid black;
+			background-size:contain;
+			background-repeat: no-repeat;
+			background-position: center;
+		}
+
+		#bottoms{
+			width: 400px;
+			height: 200px;
+			border: 1px solid black;
+			background-size:contain;
+			background-repeat: no-repeat;
+			background-position: center;
+		}
+
+		#location{
+			width: 400px;
+			height: 100px;
+			border: 1px solid black;
+			font-size: 30px;
+		}
+
+	
+	</style>
+</head>
+<body>
+<center>
+	<div id="directions">Press anywhere to generate a random Featherie outfit!</div>
+	<div id="tops"></div>
+	<div id="bottoms"></div>
+	<div id="location"></div>
+
+	<script type = "text/javascript">
+
+let skirts = ["tealSkirt.png", "blackSkirt.png", "lilacSkirt.png", "whiteSkirt.png"]
+let shirts = ["tealShirt.png", "blackShirt.png", "lilacShirt.png", "whiteShirt.png"]
+let places = ["Florida", "New York", "South Carolina", "California"]
+
+document.addEventListener("click", function(){
+	let x = Math.round(Math.random()*(skirts.length-1))
+	console.log(x)
+	bottoms.style.backgroundImage="url(" + skirts[x] +")"
+})
+
+document.addEventListener("click", function(){
+	let x = Math.round(Math.random()*(shirts.length-1))
+	console.log(x)
+	tops.style.backgroundImage="url(" + shirts[x] +")"
+})
+
+document.addEventListener("click", function(){
+	let x = Math.round(Math.random()*(places.length-1))
+	console.log(x)
+	location.style.text="places[x]"
+})
+	</script>
+
+
+</body>
+</html>

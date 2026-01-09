@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<style>
+
+		body{
+			margin:0px;
+			background-color: lightpink;
+		}
+	
+#background{
+	width: 100%;
+	height: 2000px;
+	z-index: 0;
+	top:0px;
+}
+#words{
+	background-color: lightpink;
+	font-size: 30px;
+	color: deeppink;
+	font-style: bold;
+	font-style: italic;
+	top: 200px;
+	position: relative;
+	z-index: 10;
+}
+	
+	</style>
+</head>
+<body>
+<center>
+		<div id="words">🌸 click anywhere to see what kind of pink you are... 🌸</div>
+
+	<div id="background">
+	</div>
+</center>
+	<script type = "text/javascript">
+
+let shades = ["hot pink", "baby pink", "cherry blossom", "salmon pink", "raspberry", "magenta", "fuchsia", "neon pink"]
+
+document.addEventListener("click", function(){
+	let x = Math.round(Math.random()*7)
+	console.log(x)
+	alert(shades[x])
+})
+	</script>
+
+
+</body>
+</html>
