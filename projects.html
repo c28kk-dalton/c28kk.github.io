@@ -107,7 +107,7 @@
 	#project6{
 			
 			top: 450px;
-			left: 300px;
+			left: 200px;
 		transition: 3s;
 }
 
@@ -115,14 +115,21 @@
 	#project7{
 			
 			top: 500px;
-			left: 600px;
+			left: 500px;
 		transition: 3s;
 }
 
 	#project8{
 			
 			top: 450px;
-			left: 900px;
+			left: 800px;
+		transition: 3s;
+}
+
+#project9{
+			
+			top: 500px;
+			left: 1100px;
 		transition: 3s;
 }
 
@@ -186,6 +193,7 @@
 	<div class="project" id="project6"><div class="number">6</div></div>
 	<div class="project" id="project7"><div class="number">7</div></div>
 		<div class="project" id="project8"><div class="number">8</div></div>
+		<div class="project" id="project9"><div class="number">9</div></div>
 	<center>
 		<a href="index.html">
 			<div class="boxes" id=homepage> Homepage</div>
@@ -293,6 +301,16 @@
 		project8.addEventListener("click", function(){
 			project8.style.transform ="rotate(1080deg)"
 			setTimeout(openProject8, 2000)
+				
+		})
+
+		function openProject9(){
+		window.open("confetti.html")
+		}
+
+		project9.addEventListener("click", function(){
+			project9.style.transform ="rotate(1080deg)"
+			setTimeout(openProject9, 2000)
 				
 		})
 
