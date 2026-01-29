@@ -3,8 +3,8 @@
 <head>
 	<style type="text/css">
 		.pieces{
-			width: 10px;
-			height: 10px;
+			width: 20px;
+			height: 20px;
 			border: 1px solid black;
 			display: inline-block;
 			position: absolute;
@@ -14,9 +14,10 @@
 <body>
 	<script type="text/javascript">
 	
+	let colors = ["#EC6176", "#FFDCF7", "#FC97C9", "#F9B5AC", "hotpink", "red"]
+	console.log(colors.length)
 
 	function makingConfetti(){
-	
 		let confetti = document.createElement("div")
 		confetti.classList.add("pieces")
 		document.body.appendChild(confetti)
@@ -26,10 +27,13 @@
 		let b = Math.round(Math.random()*255)
 		let rotation = Math.random() * 360
 
-		confetti.style.backgroundColor = "rgb("+r+","+g+","+b+")"
+		let randomColorIndex = Math.floor(Math.random() * colors.length)
+		confetti.style.backgroundColor = colors[randomColorIndex]
+
+				// confetti.style.backgroundColor = "rgb("+r+","+g+","+b+")"
 
 		confetti.style.top = Math.random() * 1000 + "px"
-		confetti.style.left = Math.random() * 1500 + "px"
+		confetti.style.left = Math.random() * 2000 + "px"
 		confetti.style.transform = "rotate(" +rotation + "deg)"
 
 		function fall(){
@@ -40,10 +44,13 @@
 			confetti.style.top = Math.random()*200 + "px"
 		}
 		}
-	setInterval(fall, 20)
+	setInterval(fall, 100)
+	}
+	for(let i = 0; i <500; i++){
+		makingConfetti()
 	}
 
-	setInterval(makingConfetti, 100)
+	// setInterval(makingConfetti, 100)
 	</script>
 </body>
 </html>
