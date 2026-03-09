@@ -151,6 +151,14 @@
 		transition: 3s;
 }
 
+
+#project11{
+			
+			top: 700px;
+			left: 400px;
+		transition: 3s;
+}
+
 		.project{
 			width: 200px;
 			height: 200px;
@@ -213,6 +221,7 @@
 		<div class="project" id="project8"><div class="number">8</div></div>
 		<div class="project" id="project9"><div class="number">9</div></div>
 		<div class="project" id="project10"><div class="number">10</div></div>
+				<div class="project" id="project11"><div class="number">11</div></div>
 	<center>
 		<a href="index.html">
 			<div class="boxes" id=homepage> Homepage</div>
@@ -342,6 +351,17 @@
 			setTimeout(openProject10, 2000)
 				
 		})
+
+					function openProject11(){
+		window.open("badbutton.html")
+		}
+
+		project11.addEventListener("click", function(){
+			project11.style.transform ="rotate(1080deg)"
+			setTimeout(openProject11, 2000)
+				
+		})
+
 
 
 	</script>
