@@ -159,6 +159,14 @@
 		transition: 3s;
 }
 
+
+#project12{
+			
+			top: 700px;
+			left: 700px;
+		transition: 3s;
+}
+
 		.project{
 			width: 200px;
 			height: 200px;
@@ -221,7 +229,8 @@
 		<div class="project" id="project8"><div class="number">8</div></div>
 		<div class="project" id="project9"><div class="number">9</div></div>
 		<div class="project" id="project10"><div class="number">10</div></div>
-				<div class="project" id="project11"><div class="number">11</div></div>
+		<div class="project" id="project11"><div class="number">11</div></div>
+		<div class="project" id="project12"><div class="number">12</div></div>
 	<center>
 		<a href="index.html">
 			<div class="boxes" id=homepage> Homepage</div>
@@ -359,6 +368,17 @@
 		project11.addEventListener("click", function(){
 			project11.style.transform ="rotate(1080deg)"
 			setTimeout(openProject11, 2000)
+				
+		})
+
+
+					function openProject12(){
+		window.open("gallery.html")
+		}
+
+		project12.addEventListener("click", function(){
+			project12.style.transform ="rotate(1080deg)"
+			setTimeout(openProject12, 2000)
 				
 		})
 
