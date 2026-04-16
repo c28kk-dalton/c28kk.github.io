@@ -1,0 +1,42 @@
+<html>
+
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>document</title>
+	 <script src="https://cdn.jsdelivr.net/npm/p5@1.11.11/lib/p5.min.js"></script>
+</head>
+<body>
+	<script>
+		let xpos 
+		let ypos
+
+		function setup(){
+			createCanvas(800,800)
+			background("hotpink")
+			xpos = width/2
+			ypos = height/2
+		}
+
+
+		function draw(){
+			let randomNumber = floor(random(4))
+			let randomColor = random(["white", "purple", "red"])
+			if (randomNumber == 0){
+				xpos = xpos + 10
+			} else if (randomNumber == 2){
+				xpos = xpos - 10
+			} else if (randomNumber == 1){
+				ypos = ypos+10
+			} else if (randomNumber ==3){
+				ypos = ypos - 10
+			}
+			fill(randomColor)
+			circle(xpos, ypos, 5)
+		}
+
+	</script>
+
+</body>
+</html>
+
