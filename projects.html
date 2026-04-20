@@ -170,7 +170,7 @@
 #project13{
 			
 			top: 700px;
-			left: 1100px;
+			left: 1000px;
 		transition: 3s;
 }
 
@@ -183,7 +183,7 @@
 
 #project15{
 			
-			top: 900px;
+			top: 930px;
 			left: 480px;
 		transition: 3s;
 }
@@ -192,6 +192,13 @@
 			
 			top: 900px;
 			left: 780px;
+		transition: 3s;
+}
+
+#project17{
+			
+			top: 930px;
+			left: 1080px;
 		transition: 3s;
 }
 
@@ -252,6 +259,7 @@
 		<div class="project" id="project14"><div class="number">14</div></div>
 		<div class="project" id="project15"><div class="number">15</div></div>
 		<div class="project" id="project16"><div class="number">16</div></div>
+		<div class="project" id="project17"><div class="number">17</div></div>
 	<center>
 		<a href="index.html">
 			<div class="boxes" id=homepage> Homepage</div>
@@ -441,6 +449,16 @@
 		project16.addEventListener("click", function(){
 			project16.style.transform ="rotate(1080deg)"
 			setTimeout(openProject16, 2000)
+				
+		})
+
+		function openProject17(){
+		window.open("p5jsBouncingBall.html")
+		}
+
+		project17.addEventListener("click", function(){
+			project17.style.transform ="rotate(1080deg)"
+			setTimeout(openProject17, 2000)
 				
 		})
 
