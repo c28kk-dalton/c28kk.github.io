@@ -13,6 +13,7 @@
 		let xspeed
 		let yspeed
 		let fillColor
+		let d
 
 		function setup(){
 			createCanvas(800,800)
@@ -21,6 +22,7 @@
 			xspeed = 5
 			yspeed = 8
 			fillColor = 255
+			d = 50
 		}
 
 //OR : ||
@@ -28,28 +30,52 @@
 
 		function draw(){
 			background("lightpink")
-			//reverse direction for x 
-			if (xpos + 25 > width || xpos -25 < 0){
+
+			//running the functions:
+			let randomSize = changeD(10,100)
+			changeBallColor("magenta", "red", "navy", "purple")
+			bounce()
+
+			//circle speed
+			xpos += xspeed
+			ypos += yspeed
+
+			//circle fill and size
+			fill(fillColor)
+			circle(xpos, ypos, randomSize)
+			}
+
+
+
+			function bounce(){
+				//reverse direction for x 
+			if (xpos + d/2 > width || xpos - d/2 < 0){
 				xspeed *= -1
 			}
 
 			//reverse direction for y
-			if (ypos + 25 > height || ypos -25 < 0){
+			if (ypos + d/2 > height || ypos - d/2 < 0){
 				yspeed *= -1
 			}
-
-			//if xpos is larger than width/2 and ypos is less than height/2
-			if (xpos + 25 > width/2 && ypos -25 < height/2){
-				fillColor = "hotpink"
-			} else {
-				fillColor = 255
 			}
 
-			xpos += xspeed
-			ypos += yspeed
-			fill(fillColor)
-			circle(xpos, ypos, 50)
-		}
+			function changeBallColor(bottomRightColor, topRightColor, topLeftColor, bottomLeftColor){
+			//if xpos is larger than width/2 and ypos is less than height/2
+				if (xpos + d/2 > width/2 && ypos -d/2 < height/2){
+					fillColor = bottomRightColor
+				} else if (xpos + d/2 > width/2 && ypos -d/2 > height/2){
+					fillColor = topRightColor
+				} else if (xpos + d/2 < width/2 && ypos -d/2 < height/2){
+					fillColor = topLeftColor
+				} else if (xpos + d/2 < width/2 && ypos -d/2 > height/2){
+					fillColor = bottomLeftColor
+				}	
+			}
+
+			function changeD(minSize, maxSize){
+				let randomSize = random (minSize,maxSize)
+				return randomSize
+			}
 
 	</script>
 
