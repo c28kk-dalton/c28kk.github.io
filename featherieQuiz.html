@@ -1,0 +1,282 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Arapey:ital@0;1&display=swap" rel="stylesheet">
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Cinzel+Decorative:wght@400;700;900&display=swap" rel="stylesheet">
+
+
+	<style>
+		/*#reveal {
+			visibility: hidden;
+		}*/
+
+		#a-gallery {
+			visibility: hidden;
+			color: rgb(255, 255, 255);
+			font-size: 30px;
+		}
+
+		#b-gallery {
+			visibility: hidden;
+			color: rgb(255, 255, 255);
+			font-size: 30px;
+		}
+
+		#c-gallery {
+			visibility: hidden;
+			color: rgb(255, 255, 255);
+			font-size: 30px;
+		}
+
+		#d-gallery {
+			visibility: hidden;
+			color: rgb(255, 255, 255);
+			font-size: 30px;
+		}
+
+		#introText{
+			font-size: 30px;
+			font-family: Arapey;
+			text-decoration: underline;
+			font-weight: bold;
+			color: rgb(255, 255, 255);
+		}
+		.option {
+			font-size: 15px;
+			padding: 16px;
+			font-family: Arapey;
+			color: rgb(0, 0, 0);
+		}
+
+		.selected {
+			background-color: rgb(135, 206, 250);
+		}
+
+		.questions{
+			font-size: 24px;
+			font-weight: bold;
+			font-family: Arapey;
+			color: rgb(255, 255, 255);
+		}
+
+		body {
+			background-color: rgb(40,48,84);
+		}
+	</style>
+</head>
+<body>
+	<center>
+		<br><br>
+		<div id = "introText">Answer each of these questions to find your perfect Featherie outfit!</div>
+
+		<br><br>
+	<div class = "question1 questions">What is your favorite season?
+		<br><br>
+		<button class="question-1 option a">Spring</button>
+		<button class="question-1 option b">Fall</button>
+		<button class="question-1 option c">Winter</button>
+		<button class="question-1 option d">Summer</button>
+	</div>
+
+	<br><br>
+
+	<div class = "question2 questions">What is your golf cart snack of choice?
+		<br><br>
+		<button class="question-2 option a">Protein bar</button>
+		<button class="question-2 option b">Chips</button>
+		<button class="question-2 option c">Fruit</button>
+		<button class="question-2 option d">Candy</button>
+	</div>
+
+	<br><br>
+
+	<div class = "question3 questions">How competitive are you on the course?
+		<br><br>
+		<button class="question-3 option a">Very competitive</button>
+		<button class="question-3 option b">Somewhat competitive</button>
+		<button class="question-3 option c">Not competitive</button>
+	</div>
+
+	<br><br>
+
+	<div class = "question4 questions">What do you love most about golf?
+		<br><br>
+		<button class="question-4 option a">Being outdoors</button>
+		<button class="question-4 option b">Playing with friends</button>
+		<button class="question-4 option c">The strategy that goes into each shot</button>
+		<button class="question-4 option c">The cute outfits!</button>
+	</div>
+
+	<br><br>
+
+	<div class = "question5 questions">What do you do after you finish a round?
+		<br><br>
+		<button class="question-5 option a">Practice on the driving range</button>
+		<button class="question-5 option b">Play another round!</button>
+		<button class="question-5 option c">Go home and sleep</button>
+		<button class="question-5 option d">Go out to dinner</button>
+	</div>
+
+		<br><br>
+
+	<div class = "question6 questions">What is your favorite time to play golf?
+		<br><br>
+		<button class="question-6 option a">8am</button>
+		<button class="question-6 option b">12pm</button>
+		<button class="question-6 option c">3pm</button>
+		<button class="question-6 option d">5pm</button>
+	</div>
+
+	<br><br>
+	<!-- <button id="reveal">reveal your taste!</button> -->
+	<a href="greenOutfit.html" id="a-gallery">Reveal your outfit!</a>
+	<a href="tealOutfit.html" id="b-gallery">Reveal your outfit!</a>
+	<a href="purpleOutfit.html" id="c-gallery">Reveal your outfit!</a>
+	<a href="whiteOutfit.html" id="d-gallery">Reveal your outfit!</a>
+<!-- ____________________________________________________________________________ -->
+
+	<script>
+		let answers = []
+		let allOptions = document.querySelectorAll(".option");
+
+		function removeSelectedStyles(targetQuestionClass) {
+			document.querySelectorAll(targetQuestionClass).forEach(element => {
+				element.classList.remove("selected")
+			})
+		}
+
+		allOptions.forEach(option => {
+			option.addEventListener("click", function() {
+				console.log("click", option)
+
+				if (option.classList.contains("question-1")) {
+					removeSelectedStyles(".question-1")
+					if (option.classList.contains("a")) {
+						answers[0] = "a"
+						option.classList.add("selected")
+					} else if (option.classList.contains("b")){
+						answers[0] = "b"
+						option.classList.add("selected")
+					} else if (option.classList.contains("c")){
+						answers[0] = "c"
+						option.classList.add("selected")
+					} else if (option.classList.contains("d")){
+						answers[0] = "d"
+						option.classList.add("selected")
+					} 
+				} else if (option.classList.contains("question-2")) {
+					removeSelectedStyles(".question-2")
+					if (option.classList.contains("a")) {
+						answers[1] = "a"
+						option.classList.add("selected")
+					} else if (option.classList.contains("b")){
+						answers[1] = "b"
+						option.classList.add("selected")
+					} else if (option.classList.contains("c")){
+						answers[1] = "c"
+						option.classList.add("selected")
+					} else if (option.classList.contains("d")){
+						answers[1] = "d"
+						option.classList.add("selected")
+					} 
+				} else if (option.classList.contains("question-3")) {
+					removeSelectedStyles(".question-3")
+					if (option.classList.contains("a")) {
+						answers[2] = "a"
+						option.classList.add("selected")
+					} else if (option.classList.contains("b")){
+						answers[2] = "b"
+						option.classList.add("selected")
+					} else if (option.classList.contains("c")){
+						answers[2] = "c"
+						option.classList.add("selected")
+					} else if (option.classList.contains("d")){
+						answers[2] = "d"
+						option.classList.add("selected")
+					} 
+				} else if (option.classList.contains("question-4")) {
+					removeSelectedStyles(".question-4")
+					if (option.classList.contains("a")) {
+						answers[3] = "a"
+						option.classList.add("selected")
+					} else if (option.classList.contains("b")){
+						answers[3] = "b"
+						option.classList.add("selected")
+					} else if (option.classList.contains("c")){
+						answers[3] = "c"
+						option.classList.add("selected")
+					} else if (option.classList.contains("d")){
+						answers[3] = "d"
+						option.classList.add("selected")
+					} 
+				} else if (option.classList.contains("question-5")) {
+					removeSelectedStyles(".question-5")
+					if (option.classList.contains("a")) {
+						answers[4] = "a"
+						option.classList.add("selected")
+					} else if (option.classList.contains("b")){
+						answers[4] = "b"
+						option.classList.add("selected")
+					} else if (option.classList.contains("c")){
+						answers[4] = "c"
+						option.classList.add("selected")
+					} else if (option.classList.contains("d")){
+						answers[4] = "d"
+						option.classList.add("selected")
+					} 
+				} else if (option.classList.contains("question-6")) {
+					removeSelectedStyles(".question-6")
+					if (option.classList.contains("a")) {
+						answers[5] = "a"
+						option.classList.add("selected")
+					} else if (option.classList.contains("b")){
+						answers[5] = "b"
+						option.classList.add("selected")
+					} else if (option.classList.contains("c")){
+						answers[5] = "c"
+						option.classList.add("selected")
+					} else if (option.classList.contains("d")){
+						answers[5] = "d"
+						option.classList.add("selected")
+					} 
+				}
+
+				if (answers.length === 6) {
+					// document.getElementById("reveal").style.visibility = "visible"
+					let frequencies = answers.reduce((acc, curr) => {
+					  acc[curr] = (acc[curr] || 0) + 1;
+					  return acc;
+					}, {});
+					// Find the item with the highest frequency
+					const mostFrequent = Object.keys(frequencies).reduce((a, b) => 
+					  frequencies[a] > frequencies[b] ? a : b
+					);
+					console.log("f",frequencies)
+					console.log("most freq",mostFrequent)
+					if (mostFrequent === "a") {
+						document.getElementById("a-gallery").style.visibility = "visible"
+					}
+
+					if (mostFrequent === "b") {
+						document.getElementById("b-gallery").style.visibility = "visible"
+					}
+
+					if (mostFrequent === "c") {
+						document.getElementById("c-gallery").style.visibility = "visible"
+					}
+
+					if (mostFrequent === "d") {
+						document.getElementById("d-gallery").style.visibility = "visible"
+					}
+				}
+			})
+		})
+	</script>
+</body>
+</html>

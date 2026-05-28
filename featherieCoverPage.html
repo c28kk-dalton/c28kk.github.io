@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Arapey:ital@0;1&display=swap" rel="stylesheet">
+	<title></title>
+
+	<style>
+		body {
+			background-color: rgb(40,48,84);
+		}
+
+		#projectsPage{
+			height: 20px;
+			width: 300px;
+			background-color: rgb(255, 255, 255);
+			top: 10px;
+			position: absolute;
+			color: rgb(40,48,84);
+			font-size: 15px;
+			text-align: center;
+
+		}
+
+
+		#TitleImage{
+			width: 480px;
+			height: 120px;
+			background-image: url(TitleImage.png);
+			background-repeat: no-repeat;
+			margin-top: 100px;
+			/*border: 5px solid rgb(186 188 216);*/
+		}
+
+		#start{
+			width: 200px;
+			height: 50px;
+			background-color: rgb(255,255,255);
+			color: rgb(40,48,84);
+			font-size: 30px;
+			font-family: Arapey;
+			margin-top: 30px;
+			border: 3px solid white;
+			text-decoration: none;
+	}
+
+	/*image scroller*/
+		.gallery{
+			width: 900px;
+			display: flex;
+			overflow-x: scroll;
+
+		}
+
+		.gallery div{
+			width: 100%;
+			display: grid;
+			grid-template-columns: auto auto auto ;
+			grid-gap: 20px;
+			padding: 10px;
+			flex: none;
+		}
+
+		.gallery div img{
+			width: 100%;
+			filter: grayscale(100%);
+			transition: transform 0.5s;
+		}
+
+		.gallery::-webkit-scrollbar{
+			display: none;
+		}
+
+		.gallery-wrap{
+			display: flex;
+			align-items: center;
+			justify-content: center;
+			margin: 10px auto;
+
+		}
+
+		.gallery div img:hover{
+			filter: grayscale(0);
+			cursor: pointer;
+			transform: scale(1.1);
+		}
+
+	</style>
+
+</head>
+<body>
+	<a href="projects.html"><div id="projectsPage">⭐️ Click here to return to projects page ⭐️</div></a>
+	<center>
+	<div id = "TitleImage"></div>
+	<br><a href ="featherieQuiz.html" id = "start">⭐️ START ⭐️</a>
+	<div class="gallery-wrap">
+		<div class="gallery">
+			<div>
+				<span><img src="whiteFeatherie.webp"></span>
+				<span><img src="lilacFeatherie.webp"></span>
+				<span><img src="stardustFeatherie.webp"></span>	
+			</div>
+			<div>
+				<span><img src="greenFeatherie.webp"></span>
+				<span><img src="tealFeatherie.webp"></span>
+				<span><img src="blackFeatherie.webp"></span>
+			</div>
+	</div>
+</div>
+	
+
+</body>
+</html>

@@ -202,6 +202,23 @@
 		transition: 3s;
 }
 
+.finalProject{
+			width: 400px;
+			height: 400px;
+			background-image:url(https://i.pinimg.com/736x/e4/06/87/e4068752a1268e9a01961588aaf9db11.jpg);
+			background-size: contain;
+			position: absolute;
+			font-size:20px;
+			color:black;
+			text-align: center ;
+}
+
+#project18{
+			top: 1140px;
+			left: 550px;
+		transition: 3s;
+}
+
 		.project{
 			width: 200px;
 			height: 200px;
@@ -260,6 +277,7 @@
 		<div class="project" id="project15"><div class="number">15</div></div>
 		<div class="project" id="project16"><div class="number">16</div></div>
 		<div class="project" id="project17"><div class="number">17</div></div>
+		<div class="finalProject" id="project18"><div class="number">Final Project!</div></div>
 	<center>
 		<a href="index.html">
 			<div class="boxes" id=homepage> Homepage</div>
@@ -459,6 +477,16 @@
 		project17.addEventListener("click", function(){
 			project17.style.transform ="rotate(1080deg)"
 			setTimeout(openProject17, 2000)
+				
+		})
+
+		function openProject18(){
+		window.open("featherieCoverPage.html")
+		}
+
+		project18.addEventListener("click", function(){
+			project18.style.transform ="rotate(1080deg)"
+			setTimeout(openProject18, 2000)
 				
 		})
 
